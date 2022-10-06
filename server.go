@@ -56,7 +56,7 @@ func (srv *Server) Init() {
 
 		err = processMessage(s, nm)
 		if err != nil {
-			log.Error("Unable to process message with length %d, and sender (%s): '%s'", len(msg), s.RemoteAddr(), err)
+			log.Errorf("Unable to process message with length %d, and sender (%s): '%s'", len(msg), s.RemoteAddr(), err)
 		}
 	})
 
