@@ -27,4 +27,5 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
+// This exists until the pull request to Melody merges.
 replace github.com/olahol/melody v1.1.1 => github.com/kaiaverkvist/melody v0.0.0-20221001162103-ff254fae60c1
