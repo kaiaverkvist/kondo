@@ -82,3 +82,7 @@ func (srv *Server) BroadcastOthers(data any, s *melody.Session) {
 func (srv *Server) SendTo(data any, s *melody.Session) {
 	_ = s.WriteBinary(message(data))
 }
+
+func (srv *Server) GetSessions() ([]*melody.Session, error) {
+	return srv.m.Sessions()
+}
